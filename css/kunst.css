@@ -1,10 +1,11 @@
 body {
     margin: 25px;
     background-image: url("/images/canvas.png");
+    background-size: 100%;
 }
 
 .topnav {
-    background-color: #0fa420;
+    background-color: #22cf37;
     color: #ffffff;
     border: 2px solid #000000;
     border-radius: 15px;
@@ -37,8 +38,12 @@ body {
     height: 100px;
 }
 
-a:link, a:visited {
-    color: #000000;
+.topnav a {
+    transition-duration: 0.25s;
+}
+
+.topnav a:link, a:visited {
+    color: #000000; /*Kleur doet het niet vanwege link onderaan css*/
     text-decoration: none;
     padding: 10px 10px;
     text-align: center;
@@ -46,27 +51,227 @@ a:link, a:visited {
     display: inline-block;
 }
 
-a:hover {
+.topnav a:hover {
     color: #ffffff;
     background-color: #98230f;
     border: 0px solid #98230f;
+    font-size: xx-large;
     border-radius: 10px;
-    transition: 0.25s ease-in-out;
 }
 
-a:active {
+.topnav a:active {
     color: yellow;
 }
 
+.main_product {
+    background-color: #416445;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    display: flex;
+}
+
 .product {
-    margin-top: 50px;
-    background-color: #0fa420;
+    flex-direction: column;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.main_product h1 {
+    padding-top: 50px;
+    padding-left: 100px;
+    font-size: 350%;
+    color: #d4af37;
+    text-shadow: rgb(160, 18, 18) 0px 0 5px;
+}
+
+#kerstboom_picture {
+    width: 75%; /*Schaalt niet correct om wat voor reden dan ook */
+    margin-left: 100px;
+    margin-bottom: 75px;
+    background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 15px;
 }
 
-h1 {
-    padding-top: 50px;
-    padding-left: 100px;
+.product_short_description {
+    flex-direction: column;
+}
+
+.product_short_description h1 {
+    padding-top: 200px;
     font-size: 250%;
+    color: #d4af37;
+    text-shadow: rgb(160, 18, 18) 0px 0 5px;
+}
+
+.product_short_description p {
+    margin-right: 80px;
+    font-size: x-large;
+    color: #d4af37;
+    text-shadow: rgb(160, 18, 18) 0px 0 5px;
+}
+
+.product_short_description a {
+    transition-duration: 0.15s;
+    margin-bottom: 50px;
+}
+
+.product_short_description a:link, a:visited {
+    align-items: center;
+    color: #000000;  /*Kleur doet het niet vanwege link onderaan css*/
+    background-color: #d4af37;
+    border: 0px solid #98230f;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: larger;
+}
+
+.product_short_description a:hover {
+    color: #696969;
+    background-color: #ffe5bd;
+    border: 0px solid #98230f;
+    border-radius: 10px;
+    font-size: x-large;
+}
+
+.omschrijving {
+    background-color: #46756a;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+}
+
+.plus-minpunten {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    width: 20%;
+    padding: 20px;
+    background-color: #d4af37;
+    border: 0px solid #000000;
+    border-radius: 10px;
+}
+
+.product_long_description {
+    flex-direction: column;
+    margin: 100px 50px 50px 50px;
+    width: 60%;
+}
+
+.product_long_description h1 {
+    font-size: 250%;
+}
+
+.product_long_description a {
+    transition-duration: 0.15s;
+}
+
+.product_long_description a:link, a:visited{
+    color: #b91717;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product_long_description a:hover {
+    color: #ffffff;
+    background-color: #98230f;
+    border: 0px solid #98230f;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+.product_long_description a:active {
+    color: yellow;
+}
+
+.Gerelateerde_producten {
+    background-color: #416445;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.Gerelateerde_producten h1 {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 0px;
+    font-size: 250%;
+    color: #c0c0c0;
+    display: inline-block;
+}
+
+.containers  {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#grote_boom_foto {
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+#krans_foto {
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+#boom_in_sloot_foto {
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.product_1 {
+    margin-right: 5%;
+}
+
+.product_3 {
+    margin-left: 5%;
+}
+
+.footer {
+    background-color: #555555;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.footer a:link, a:visited{
+    color: #c0c0c0; /*Deze beinvloedt de kleuren van alle bovenstaande links, terwijl het alleen deze zou moeten beinvloeden?*/
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #36e1ff;
+    text-decoration: underline;
+}
+
+.footer a:active {
+    color: yellow;
 }
